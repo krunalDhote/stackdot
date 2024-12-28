@@ -1,0 +1,902 @@
+{
+	"info": {
+		"_postman_id": "8c711976-9323-4e95-be47-e078d4e3b978",
+		"name": "Node Int",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26603635"
+	},
+	"item": [
+		{
+			"name": "StackDot",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"institute\":\"Competitive Exam Centers\",\r\n    // \"school\":{\r\n    //     \"board\":\"CBSE\",\r\n    //     \"medium\":\"English\",\r\n    //     \"classCategory\":{\r\n    //         \"classCategory\":\"Higher Secondary\",\r\n    //         \"statndard\":\"10th\",\r\n    //         \"subject\":\"Math\"\r\n    //     }\r\n    // }\r\n    // \"college\":{\r\n    //     \"university\":\"SGBAU\",\r\n    //     \"degree\":\"Bachelor\"\r\n    // }\r\n    \"examCenter\":{\r\n        \"examTypes\":\"CAT\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "School",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"institute\":\"School\",\r\n    \"school\":{\r\n        \"board\":\"CBSE\",\r\n        \"medium\":\"English\",\r\n        \"classCategory\":{\r\n            \"classCategory\":\"Higher Secondary\",\r\n            \"statndard\":\"10th\",\r\n            \"subject\":\"Math\"\r\n        }\r\n    }\r\n    // \"college\":{\r\n    //     \"university\":\"SGBAU\",\r\n    //     \"degree\":\"Bachelor\"\r\n    // }\r\n    // \"examCenter\":{\r\n    //     \"examTypes\":\"CAT\"\r\n    // }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "366"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"16e-QpgUpR+VAEEKRNFQSnyc3XYnHGI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 10:49:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": {\n        \"userName\": \"krunalDhote01\",\n        \"institute\": \"School\",\n        \"school\": {\n            \"board\": \"CBSE\",\n            \"medium\": \"English\",\n            \"classCategory\": {\n                \"classCategory\": \"Higher Secondary\",\n                \"statndard\": \"10th\",\n                \"subject\": \"Math\"\n            }\n        },\n        \"_id\": \"676fd7d302e4f23fff849dbe\",\n        \"createdAt\": \"2024-12-28T10:49:55.716Z\",\n        \"updatedAt\": \"2024-12-28T10:49:55.716Z\",\n        \"__v\": 0\n    },\n    \"message\": \"User registered successfully\"\n}"
+						},
+						{
+							"name": "College",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"institute\":\"Colleges\",\r\n    // \"school\":{\r\n    //     \"board\":\"CBSE\",\r\n    //     \"medium\":\"English\",\r\n    //     \"classCategory\":{\r\n    //         \"classCategory\":\"Higher Secondary\",\r\n    //         \"statndard\":\"10th\",\r\n    //         \"subject\":\"Math\"\r\n    //     }\r\n    // }\r\n    \"college\":{\r\n        \"university\":\"SGBAU\",\r\n        \"degree\":\"Bachelor\"\r\n    }\r\n    // \"examCenter\":{\r\n    //     \"examTypes\":\"CAT\"\r\n    // }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "260"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"104-JnOanoOjlGAz7Sn+qOZ4PbnJwn8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 10:52:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": {\n        \"institute\": \"Colleges\",\n        \"college\": {\n            \"university\": \"SGBAU\",\n            \"degree\": \"Bachelor\"\n        },\n        \"_id\": \"676fd85639888b75a3a05051\",\n        \"createdAt\": \"2024-12-28T10:52:06.792Z\",\n        \"updatedAt\": \"2024-12-28T10:52:06.792Z\",\n        \"__v\": 0\n    },\n    \"message\": \"User registered successfully\"\n}"
+						},
+						{
+							"name": "Exam Center",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"institute\":\"Competitive Exam Centers\",\r\n    // \"school\":{\r\n    //     \"board\":\"CBSE\",\r\n    //     \"medium\":\"English\",\r\n    //     \"classCategory\":{\r\n    //         \"classCategory\":\"Higher Secondary\",\r\n    //         \"statndard\":\"10th\",\r\n    //         \"subject\":\"Math\"\r\n    //     }\r\n    // }\r\n    // \"college\":{\r\n    //     \"university\":\"SGBAU\",\r\n    //     \"degree\":\"Bachelor\"\r\n    // }\r\n    \"examCenter\":{\r\n        \"examTypes\":\"CAT\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "256"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"100-7Gs4JRboMDC/RajJz8paMUdUfTs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 10:53:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": {\n        \"institute\": \"Competitive Exam Centers\",\n        \"examCenter\": {\n            \"examTypes\": \"CAT\"\n        },\n        \"_id\": \"676fd88f39888b75a3a05053\",\n        \"createdAt\": \"2024-12-28T10:53:03.352Z\",\n        \"updatedAt\": \"2024-12-28T10:53:03.352Z\",\n        \"__v\": 0\n    },\n    \"message\": \"User registered successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Institute",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/user?institute=School",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"user"
+									],
+									"query": [
+										{
+											"key": "institute",
+											"value": "School"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "226"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e2-3IwN+0Q0GFkX/h4SvcCEdEkyAWI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 11:04:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": [\n        {\n            \"_id\": \"676fd7d302e4f23fff849dbe\",\n            \"institute\": \"School\",\n            \"board\": \"CBSE\",\n            \"medium\": \"English\",\n            \"classCategory\": \"Higher Secondary\",\n            \"statndard\": \"10th\",\n            \"subject\": \"Math\"\n        }\n    ],\n    \"message\": \"User registered successfully\"\n}"
+						},
+						{
+							"name": "Get Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "418"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a2-EhO9g0Q948QICD2+9+2FTHvpeZM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 11:04:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": [\n        {\n            \"_id\": \"676fd7d302e4f23fff849dbe\",\n            \"institute\": \"School\",\n            \"board\": \"CBSE\",\n            \"medium\": \"English\",\n            \"classCategory\": \"Higher Secondary\",\n            \"statndard\": \"10th\",\n            \"subject\": \"Math\"\n        },\n        {\n            \"_id\": \"676fd85639888b75a3a05051\",\n            \"institute\": \"Colleges\",\n            \"university\": \"SGBAU\",\n            \"degree\": \"Bachelor\"\n        },\n        {\n            \"_id\": \"676fd88f39888b75a3a05053\",\n            \"institute\": \"Competitive Exam Centers\",\n            \"examCenter\": \"CAT\"\n        }\n    ],\n    \"message\": \"User registered successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "slug",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/slug/:slug?classCategory=676fe2eeeaf0ca7612ab1478",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"slug",
+								":slug"
+							],
+							"query": [
+								{
+									"key": "classCategory",
+									"value": "676fe2eeeaf0ca7612ab1478"
+								}
+							],
+							"variable": [
+								{
+									"key": "slug",
+									"value": "standard"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get Standard",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/slug/:slug",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"slug",
+										":slug"
+									],
+									"variable": [
+										{
+											"key": "slug",
+											"value": "standard"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "329"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"149-Q2EYppXyK33VuPCzygrdi3wAtDo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 11:50:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": [\n        {\n            \"_id\": \"676fe368eaf0ca7612ab147c\",\n            \"name\": \"LKG\",\n            \"classCategory\": {\n                \"_id\": \"676fe30eeaf0ca7612ab147a\",\n                \"name\": \"Pre-primary\",\n                \"__v\": 0\n            }\n        },\n        {\n            \"_id\": \"676fe395eaf0ca7612ab147e\",\n            \"name\": \"10th\",\n            \"classCategory\": {\n                \"_id\": \"676fe2eeeaf0ca7612ab1478\",\n                \"name\": \"Higher Secondary\",\n                \"__v\": 0\n            }\n        }\n    ],\n    \"message\": \"Request Completed successfully\"\n}"
+						},
+						{
+							"name": "get standard by class category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/slug/:slug?classCategory=676fe2eeeaf0ca7612ab1478",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"slug",
+										":slug"
+									],
+									"query": [
+										{
+											"key": "classCategory",
+											"value": "676fe2eeeaf0ca7612ab1478"
+										}
+									],
+									"variable": [
+										{
+											"key": "slug",
+											"value": "standard"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "201"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c9-MHaFkQlNvWmvO4MmJtRncN0UtMc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 11:52:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": [\n        {\n            \"_id\": \"676fe395eaf0ca7612ab147e\",\n            \"name\": \"10th\",\n            \"classCategory\": {\n                \"_id\": \"676fe2eeeaf0ca7612ab1478\",\n                \"name\": \"Higher Secondary\",\n                \"__v\": 0\n            }\n        }\n    ],\n    \"message\": \"Request Completed successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create slug",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"10th\",\r\n    \"classCategory\":\"676fe2eeeaf0ca7612ab1478\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/slug/:slug",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"slug",
+								":slug"
+							],
+							"variable": [
+								{
+									"key": "slug",
+									"value": "standard"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Institute",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"School\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/slug/:slug",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"slug",
+										":slug"
+									],
+									"variable": [
+										{
+											"key": "slug",
+											"value": "institute"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "121"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"79-v4o20SfKRRnTzrnPkHE14YRJs4Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 11:35:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": {\n        \"name\": \"School\",\n        \"_id\": \"676fe26ceaf0ca7612ab1470\",\n        \"__v\": 0\n    },\n    \"message\": \"Record created successfully\"\n}"
+						},
+						{
+							"name": "Board",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"CBSE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/slug/:slug",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"slug",
+										":slug"
+									],
+									"variable": [
+										{
+											"key": "slug",
+											"value": "board"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "119"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"77-qWV+OY9AWEmZPeVTrBdrvByyW4A\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 11:35:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": {\n        \"name\": \"CBSE\",\n        \"_id\": \"676fe296eaf0ca7612ab1472\",\n        \"__v\": 0\n    },\n    \"message\": \"Record created successfully\"\n}"
+						},
+						{
+							"name": "Medium",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Hindi\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/slug/:slug",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"slug",
+										":slug"
+									],
+									"variable": [
+										{
+											"key": "slug",
+											"value": "medium"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "120"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"78-ZrYWSQnJ1bVv0TqHTSbSEj4uE/I\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 11:36:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": {\n        \"name\": \"Hindi\",\n        \"_id\": \"676fe2c0eaf0ca7612ab1476\",\n        \"__v\": 0\n    },\n    \"message\": \"Record created successfully\"\n}"
+						},
+						{
+							"name": "classCategory",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Pre-primary\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/slug/:slug",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"slug",
+										":slug"
+									],
+									"variable": [
+										{
+											"key": "slug",
+											"value": "classCategory"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "126"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7e-8oh+91Arnqa/m0mECPOv3eh2X6I\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 11:37:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": {\n        \"name\": \"Pre-primary\",\n        \"_id\": \"676fe30eeaf0ca7612ab147a\",\n        \"__v\": 0\n    },\n    \"message\": \"Record created successfully\"\n}"
+						},
+						{
+							"name": "standard",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"LKG\",\r\n    \"classCategory\":\"676fe30eeaf0ca7612ab147a\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:4000/slug/:slug",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"slug",
+										":slug"
+									],
+									"variable": [
+										{
+											"key": "slug",
+											"value": "standard"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "161"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a1-Waywbelp/RnpZ8JYauAwponl4UM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 28 Dec 2024 11:39:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"data\": {\n        \"name\": \"LKG\",\n        \"classCategory\": \"676fe30eeaf0ca7612ab147a\",\n        \"_id\": \"676fe368eaf0ca7612ab147c\",\n        \"__v\": 0\n    },\n    \"message\": \"Record created successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
